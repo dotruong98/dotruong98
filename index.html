@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<style>
+    .layout {
+        width: 100%;
+        height: 900px;
+        background-image: url("background5.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .title-home {
+        width: 600px;
+        height: 350px;
+        border-radius: 60px;
+        background-color: white;
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 7%;
+        z-index: 99;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .icon-book {
+        width: 100%;
+    }
+
+    .title {
+        width: 200px;
+        color: burlywood;
+        font-size: 64px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .div-avatar {
+        width: 500px;
+        height: 500px;
+    }
+
+    .avatar {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 50%;
+        z-index: 999;
+        position: relative;
+    }
+
+    .bar {
+        /* position: fixed; */
+        width: 100%;
+    margin-bottom: 550px;
+    margin-left: 50px;
+        color: chocolate;
+        font-size: 42px;
+        width: 100px;
+    }
+
+    .bar:hover .link {
+        display: flex;
+    }
+
+    .link {
+        width: 100%;
+    margin-bottom: 150px;
+    margin-left: 50px;
+        color: chocolate;
+        font-size: 24px;
+        width: 200px;
+        display: none;
+        flex-direction: column;
+
+    }
+
+
+
+
+
+
+    .layout1{
+        width: 100%;
+        height: 890px;
+        background-image: url("background6.jpg");
+        /* background-repeat: repeat; */
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+.title1{
+
+    width: 100%;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    color: chocolate;
+    font-size: 42px;
+    font-weight: bolder;
+}
+.body1{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.item1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: -20px;
+} */
+.item-title1{
+    background-color: chocolate;
+    padding: 20px 100px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+
+
+
+.layout2{
+        width: 100%;
+        height: 900px;
+        background-image: url("background5.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+.title2{
+    color: burlywood;
+    font-size: 64px;
+    
+}
+
+.div-avatar2{
+    width: 400px;
+
+}
+.avatar2{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    z-index: 999;
+    position: relative;
+}
+.content2{
+    width: 97%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.title-content2{
+    /* width: 100%; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+.header2{
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: sienna;
+}
+.body2{
+    width: 90%;
+    height: 200px;
+    padding:0 50px ;
+    color: sienna;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+}
+.title2{
+    width: 400px;
+    background-color: burlywood;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    font-size: 42px;
+    padding: 10px 10px;
+}
+
+
+
+
+.layout3 {
+            width: 100%;
+            height: 890px;
+            background-image: url("background6.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .title3{
+            color: burlywood;
+            font-size: 64px;
+
+        }
+
+        .div-avatar3 {
+            width: 400px;
+
+        }
+
+        .avatar3 {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            z-index: 999;
+            position: relative;
+        }
+
+        .content3 {
+            width: 99%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: -400px;
+        }
+
+        .title-content3 {
+            /* width: 100%; */
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            padding-left: 50px;
+
+        }
+.item3{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.title3{
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 2px solid sienna;
+    text-align: start;
+}
+
+
+
+
+
+.layout4{
+        width: 100%;
+        height: 890px;
+        background-image: url("background4.jpg");
+        /* background-repeat: repeat; */
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+.title4{
+    width: 100%;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    color: brown;
+    font-size: 42px;
+}
+.body4{
+    width: 10px;
+    padding-left: 100px;
+    font-size: 160px;
+    font-weight: bolder;
+    color: brown;
+}
+
+</style>
+<script>
+    function handleClick() {
+
+    }
+</script>
+
+<body>
+    <div class="layout">
+        <img src="icon-bar.png" alt="" class="bar">
+       <div style="width: 100%; height: 100%; display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;">
+        <div class="link">
+            <a href="introduction.html">Introduce</a>
+            <a href="project.html">Project Design</a>
+            <a href="contact.html">Contact</a>
+            <a href="thankyou.html">Thank you</a>
+
+
+        </div>
+        <div class="title-home">
+            <div class="icon">
+                <img src="icon-book.webp" alt="avatar" class="icon-book" >
+
+            </div>
+            <div class="title">
+                Creative
+                Portofolio
+            </div>
+
+        </div>
+        <div class="div-avatar">
+            <img src="avatar.jpg" alt="avatar" class="avatar">
+        </div>
+       </div>
+    </div>
+
+
+
+    <div class="layout2">
+        <div class="content2">
+            <div class="div-avatar2">
+                <img src="avatar.jpg" alt="avatar" class="avatar2" >
+            </div>
+            <div class="title-content2">
+                <div class="header-content2">
+                    <div class="header2">
+                        Hello, my name is Do Truong
+                    </div>
+                    <div class="body2">
+                        I am currently a final year student at FPT University. The major I'm studying at school is Graphic Design. In addition to studying at school, I also work for a company with a major in animation.
+                    </div>
+                </div>
+                <div class="title2">
+                    INTRODUCE
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="layout1">
+        <div class="title1">
+            Project Design
+        </div>
+        <div class="body1">
+            <div class="item1">
+                <div class="item-avatar">
+                    <img src="project3.jpg" alt="" style="  width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    margin-bottom: -20px;">
+                </div>
+                <div class="item-title1">
+                    Project 1
+                </div>
+            </div>
+            <div class="item1">
+                <div class="item-avatar1">
+                    <img src="project2.jpg" alt="" style="  width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    margin-bottom: -20px;">
+                </div>
+                <div class="item-title1">
+                    Project 2
+                </div>
+            </div>
+            <div class="item1">
+                <div class="item-avatar1">
+                    <img src="project1.jpg" alt="" style="  width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    margin-bottom: -20px;">
+                </div>
+                <div class="item-title1">
+                    Project 3
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="layout3">
+        <div class="content3">
+            <div class="div-avatar3">
+                <img src="avatar.jpg" alt="avatar" class="avatar3">
+            </div>
+            <div class="title-content3">
+                <div class="item3" style="color: sienna; font-size: 46px;">
+                    Connect With Us!
+                </div>
+                <div class="item3">
+                    <div class="icon3">
+                        <img src="icon-location.png" alt="" style="width: 50px;">
+
+                    </div>
+                    <div class="title3">
+                        Ngoc My , Quoc Oai , Ha Noi
+                    </div>
+                </div>
+
+
+                <div class="item3">
+                    <div class="icon3">
+                        <img src="icon-mail.png" alt="" style="width: 50px">
+
+                    </div>
+                    <div class="title3">
+                        dotruong771998@gmail.com
+                    </div>
+                </div>
+
+
+                <div class="item3">
+                    <div class="icon3">
+                        <img src="icon-phone3.png" alt="" style="width: 50px">
+                    </div>
+                    <div class="title3">
+                        0339279308
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="layout4">
+        <div class="title4">
+            Creative Portofolio
+        </div>
+        <div class="body4">
+           Thank you!
+        </div>
+    </div>
+</body>
+
+</html>
